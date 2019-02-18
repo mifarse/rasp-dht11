@@ -26,7 +26,7 @@ if __name__ == "__main__":
         print('Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
 
         json_body[0]['fields']['temperature'] = temperature
-        json_body[0]['fields']['humidity'] = temperature
+        json_body[0]['fields']['humidity'] = humidity
         json_body[0]['time'] = datetime.datetime.now().isoformat()
 
         print("Write points: {0}".format(json_body))
